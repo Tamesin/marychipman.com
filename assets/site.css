@@ -87,17 +87,20 @@ body {
 }
 
 h2 {
-  margin: 0 0 0.35rem 0;
+  margin: 0 0 1.35rem 0;
   font-size: 1.75rem;
-  line-height: 1.15;
+  line-height: 1.25;
   font-weight: 700;
 }
 
-.project-link {
-  margin: 0 0 1.35rem 0;
-  font-size: 1.75rem;
-  line-height: 1.15;
-  font-weight: 700;
+h2 a,
+h2 a:link,
+h2 a:visited {
+  color: #075f8f;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  word-break: break-word;
 }
 
 p {
@@ -141,18 +144,9 @@ a:focus {
     padding: 1.4rem;
   }
 
-  h2,
-  .project-link {
+  h2 {
     font-size: 1.45rem;
   }
-
-.link-label {
-  display: inline-block;
-  margin-right: 0.35rem;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #555555;
-}
 
   p,
   .project-summary {
