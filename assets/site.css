@@ -12,8 +12,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Verdana, Arial, sans-serif;
-  background: #f4efe4;
-  color: #23201c;
+  background: #f7f7f3;
+  color: #222222;
   line-height: 1.55;
 }
 
@@ -28,25 +28,52 @@ body {
 .card {
   width: 100%;
   max-width: 760px;
-  padding: 2.5rem;
-  background: #fffaf0;
-  border: 1px solid #d8cbb7;
-  box-shadow: 0 12px 30px rgba(35, 32, 28, 0.12);
-  text-align: center;
+  padding: 2.5rem 2.75rem;
+  background: #fffdfa;
+  border: 1px solid #dedbd2;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.site-mark-wrap {
+  margin: 0 0 1.25rem 0;
 }
 
 .site-mark {
   display: block;
-  width: 96px;
+  width: 56px;
   height: auto;
-  margin: 0 auto 1.25rem auto;
+  margin: 0 0 0.35rem 0;
+}
+
+.site-mark-wrap figcaption {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #888888;
+}
+
+.byline {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.95rem;
+  color: #666666;
 }
 
 h1 {
   margin: 0 0 0.75rem 0;
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 2.1rem;
+  line-height: 1.15;
   font-weight: 700;
+}
+
+.project-link {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.summary {
+  max-width: 38rem;
 }
 
 p {
@@ -54,13 +81,14 @@ p {
   font-size: 1.05rem;
 }
 
-.lede {
-  font-size: 1.15rem;
-  font-weight: 700;
+.status {
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+  color: #666666;
 }
 
 a {
-  color: #064f7a;
+  color: #0b5c8a;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
@@ -68,23 +96,19 @@ a {
 footer {
   margin-top: 2rem;
   font-size: 0.9rem;
-  color: #5f574d;
+  color: #666666;
 }
 
 @media (max-width: 600px) {
-  .page {
-    padding: 1rem;
-  }
-
   .card {
     padding: 1.5rem;
   }
 
-  .site-mark {
-    width: 80px;
+  h1 {
+    font-size: 1.75rem;
   }
 
-  h1 {
-    font-size: 1.65rem;
+  .project-link {
+    font-size: 1.15rem;
   }
 }
