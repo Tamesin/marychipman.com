@@ -44,35 +44,24 @@ body {
 
 .site-mark {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
 .site-mark-wrap figcaption {
   margin: 0.08rem 0 0 0;
-  font-size: 0.5rem;
+  font-size: 0.46rem;
   line-height: 1;
   font-weight: 400;
-  color: #b8b8b2;
-}
-
-.site-identity {
-  min-width: 0;
+  color: #c0c0ba;
 }
 
 .site-owner {
-  margin: 0 0 0.12rem 0;
+  margin: 0;
   font-size: 1rem;
   font-weight: 700;
   color: #222222;
-}
-
-.site-summary {
-  margin: 0;
-  max-width: 720px;
-  font-size: 0.9rem;
-  color: #555555;
 }
 
 .page {
@@ -90,16 +79,23 @@ body {
   text-align: left;
 }
 
-h1 {
+.project-summary {
+  margin: 0 0 1.4rem 0;
+  max-width: 42rem;
+  font-size: 1.05rem;
+  color: #333333;
+}
+
+h2 {
   margin: 0 0 0.35rem 0;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   line-height: 1.15;
   font-weight: 700;
 }
 
 .project-link {
   margin: 0 0 1.35rem 0;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   line-height: 1.15;
   font-weight: 700;
 }
@@ -109,11 +105,18 @@ p {
   font-size: 1.05rem;
 }
 
-a {
+a,
+a:link,
+a:visited {
   color: #075f8f;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus {
+  color: #004f7a;
 }
 
 .site-footer {
@@ -127,12 +130,7 @@ a {
 
 @media (max-width: 700px) {
   .site-header-inner {
-    align-items: flex-start;
     padding: 0.7rem 1rem;
-  }
-
-  .site-summary {
-    font-size: 0.85rem;
   }
 
   .page {
@@ -143,12 +141,21 @@ a {
     padding: 1.4rem;
   }
 
-  h1,
+  h2,
   .project-link {
-    font-size: 1.65rem;
+    font-size: 1.45rem;
   }
 
-  p {
+.link-label {
+  display: inline-block;
+  margin-right: 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #555555;
+}
+
+  p,
+  .project-summary {
     font-size: 1rem;
   }
 }
