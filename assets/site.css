@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -11,69 +13,83 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: Verdana, Arial, sans-serif;
-  background: #f7f7f3;
+  font-family: "Public Sans", "Segoe UI", Arial, sans-serif;
+  background: #f7f7f4;
   color: #222222;
   line-height: 1.55;
 }
 
-.page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d2;
+  background: #fbfbf7;
 }
 
-.card {
-  width: 100%;
-  max-width: 760px;
-  padding: 2.5rem 2.75rem;
-  background: #fffdfa;
-  border: 1px solid #dedbd2;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  text-align: left;
+.site-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
 }
 
 .site-mark-wrap {
-  margin: 0 0 1.25rem 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-mark {
   display: block;
-  width: 56px;
-  height: auto;
-  margin: 0 0 0.35rem 0;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
 }
 
 .site-mark-wrap figcaption {
-  margin: 0;
-  font-size: 0.7rem;
+  margin: 0.12rem 0 0 0;
+  font-size: 0.58rem;
+  line-height: 1;
   font-weight: 400;
-  color: #888888;
+  color: #8a8a82;
 }
 
-.byline {
-  margin: 0 0 0.35rem 0;
-  font-size: 0.95rem;
-  color: #666666;
+.site-owner {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.page {
+  width: 100%;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+}
+
+.project-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 2.25rem;
+  background: #ffffff;
+  border: 1px solid #ddddd6;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+  text-align: left;
 }
 
 h1 {
-  margin: 0 0 0.75rem 0;
-  font-size: 2.1rem;
-  line-height: 1.15;
+  margin: 0 0 0.25rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 .project-link {
-  margin: 0 0 1rem 0;
-  font-size: 1.25rem;
+  margin: 0 0 1.35rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: 700;
-}
-
-.summary {
-  max-width: 38rem;
 }
 
 p {
@@ -81,34 +97,40 @@ p {
   font-size: 1.05rem;
 }
 
-.status {
-  margin-top: 1.5rem;
-  font-size: 0.92rem;
-  color: #666666;
-}
-
 a {
-  color: #0b5c8a;
+  color: #075f8f;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
-footer {
-  margin-top: 2rem;
-  font-size: 0.9rem;
+.site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 2rem 1.5rem;
+  font-size: 0.85rem;
   color: #666666;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
-  .card {
-    padding: 1.5rem;
+  .site-header-inner {
+    padding: 0.7rem 1rem;
   }
 
-  h1 {
-    font-size: 1.75rem;
+  .page {
+    padding: 1.5rem 1rem;
   }
 
+  .project-card {
+    padding: 1.4rem;
+  }
+
+  h1,
   .project-link {
-    font-size: 1.15rem;
+    font-size: 1.55rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
