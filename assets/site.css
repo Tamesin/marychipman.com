@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Verdana, Arial, sans-serif;
+  background: #f4efe4;
+  color: #23201c;
+  line-height: 1.55;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  padding: 2.5rem;
+  background: #fffaf0;
+  border: 1px solid #d8cbb7;
+  box-shadow: 0 12px 30px rgba(35, 32, 28, 0.12);
+  text-align: center;
+}
+
+.site-mark {
+  display: block;
+  width: 96px;
+  height: auto;
+  margin: 0 auto 1.25rem auto;
+}
+
+h1 {
+  margin: 0 0 0.75rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  font-size: 1.05rem;
+}
+
+.lede {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+a {
+  color: #064f7a;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #5f574d;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .site-mark {
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+}
